@@ -1,0 +1,337 @@
+@font-face {
+    font-family: bold;
+    src: url(./Graphik-Bold.7d647680.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(./Graphik-Light.dcd601dc.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-bar{
+    display: flex;
+    /* padding: 0vw 3vw; */
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+}
+
+.nav-actions a{
+    color: black;
+}
+
+.nav-bar .logo-box img{
+    width: 5vw;
+}
+
+.logo-box{
+    width: 10%;
+    height: 100px;
+    /* background-color:green; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-bar .nav-actions{
+    display: flex;
+    width: 90%;
+    /* background-color: yellow; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0vw 2vw;
+    gap: 1.3vw;
+}
+
+.nav-actions p{
+    font-size: 1vw;
+    font-family: light;
+    /* transition: 0.5s ease all; */
+    cursor: pointer;
+}
+
+.nav-actions p:hover{
+    scale: 1.2;
+    color: #121936;
+    font-weight: 700;
+}
+
+.nav-actions i{
+    display: none;
+}
+
+.content-box{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color:red; */
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.left-box{
+    width: 70%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    /* justify-content: end; */
+    flex-direction: column;
+}
+
+.upper-box{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.admissions-box{
+    width: 95%;
+    height: 95%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    gap: 2vw;
+    overflow-x: hidden;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.admissions-box h1{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: bold;
+    color: #121936;
+    position: relative;
+    left: -100%;
+}
+
+
+
+.admissions-box #stroke{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #121936;
+    
+}
+
+.fall-box{
+    width: 95%;
+    height: 95%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    gap: 2vw;
+    overflow-x: hidden;
+    white-space: nowrap;
+    justify-content: end;
+    align-items: center;
+}
+
+.fall-box h1{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: bold;
+    color: #121936;
+    position: relative;
+    right: -80%;
+}
+
+
+
+.fall-box #stroke{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #121936;
+    
+}
+
+
+.lower-box{
+    width: 100%;
+    height: 20%;
+    /* background-color: yellow; */
+}
+
+
+.right-box{
+    width: 30%;
+    height: 100%;
+    /* background-color: purple; */
+    overflow-x: hidden;
+    position: relative;
+}
+
+.right-box img{
+    width: 61vw;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    right: -50%;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #121936;
+    position: absolute;
+    opacity: 0.7 ;
+}
+.center-box{
+    width: 100%;
+    height: 60%;
+    /* background-color: rgb(110, 220, 20); */
+    display: flex;
+}
+
+
+.img-box{
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-box img{
+    width: 20vw;
+}
+
+.text-box{
+    width: 60%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: bold;
+}
+
+.text-box h1{
+    color: #121936;
+    font-size: 5vw;
+    margin-left: 2.5vw;
+    transition: 0.3s ease ;
+
+}
+
+.text-box h1:hover{
+  color:transparent;
+  -webkit-text-stroke-color: #121936;
+  -webkit-text-stroke-width: 1px;
+
+}
+
+
+
+.text-box h6{
+    color: white;
+    font-size: 1.7vw;
+    background-color: #121936;
+    width: 90%;
+    padding: .5vw 3vw;
+    border-radius: 3px;
+
+}
+
+#students{
+    position: absolute;
+    width: 32vw;
+    right:8%;
+    z-index: 99;
+    bottom: 0%;
+}
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.page2 h1{
+    margin: 2vw 0vw;
+    font-family: bold;
+    text-transform: uppercase;
+    color: #121936;
+}
+.page2 .content-box{
+    width: 80%;
+    height: 60%;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.144);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page2 .content-box a{
+    color: #0054A8;
+}
+
+.page2 .content-box p {
+    padding: .4vw 0vw;
+    font-family: light;
+    margin-left: 4vw;
+    font-weight: 900;
+}
+
+.page2 .content-box b{
+    color: #0054A8;
+    font-weight: 900;
+}
+
+.page2 #step{
+    color: black;
+    font-family: bold;
+}
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+.page3 .image-box{
+    width: 100;
+}
+
